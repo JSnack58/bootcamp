@@ -1,0 +1,19 @@
+h1{
+    color: aquamarine;
+    background-color: cadetblue;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: yellowgreen underline;
+    font-family: Arial, Helvetica, sans-serif,cursive,'Times New Roman';
+}
+
+p{
+    font-weight: 700;
+}
+button{
+    background-color: cadetblue;
+}
+option{
+    background-color: chartreuse;
+    fill: chartreuse;
+}
