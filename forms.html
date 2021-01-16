@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="selectors.css">
 </head>
 
 <body>
@@ -14,13 +14,13 @@
     <form action="/tacos">
         <p>
             <!--labels the entity of a unique id -->
-            <label for="username">Enter Username:</label> 
+            <label for="username" class="userinfo">Enter Username:</label> 
             <!--input tyes: text, password, color, number-->
             <input type="text" placeholder="username" id="username" name="username">
             
         </p>
         <p>
-            <label for="password">Enter Password:</label>
+            <label for="password" class="userinfo">Enter Password:</label>
             <input type="password" placeholder="password" id="password" name="password">
         </p>
         <p>
@@ -31,7 +31,7 @@
             <label for="number">Pick a number:</label>
             <input type="number" placeholder="enter a number" id="number" name="number">
         </p>
-        <button>Submit</button><!--buttons within forms submit them-->
+        <button id="submission">Submit</button><!--buttons within forms submit them-->
         <input type="submit" value="Click Me"><!--input type submit-->
     </form> 
     <h2>Search Reddit</h2>

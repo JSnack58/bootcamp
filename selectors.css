@@ -1,3 +1,22 @@
-*{
+body{
     background-color: cyan;
+}
+
+button{
+    font-size: 30px;
+    background-color: cyan;
+}
+
+option{
+    font-size: 20px;
+    background-color: darkgreen;
+   
+}
+/* # are for ID*/
+#submission{
+    background-color: yellowgreen;
+}
+/* . are for classes */
+.userinfo{
+    background-color: teal;
 }
