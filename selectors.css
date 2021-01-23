@@ -20,7 +20,109 @@ option{
 .userinfo{
     background-color: teal;
 }
+/* Descedent selector
 
+*/
 li a{
     color: yellow;
 }
+
+/* Adjacent selector 
+    Affects an entity preceded by another
+*/
+p + button{
+    font-size: 50px;
+    background-color: teal;
+}
+
+/* 
+    Direct child
+    selects children of a certain element
+    Basically select child directly under type
+    <div>
+       <h1> DIRECT CHILD
+           <p>...</p> NOT DIRECT CHILD
+       </h1>
+    </div> 
+    Makes all form's paragraghs magenta
+*/
+/* form > p{
+    color: magenta;
+} */
+
+/* Attribute Selector 
+    Selects Elements with a given attribute
+    <html>...
+      <button id= "submission" >search</button>
+    --------------------------------
+    button[type="submission"]
+*/
+input[type="password"]{
+   color: red;
+}
+/* make the meal label yello */
+label[for="meal"]{
+    color: yellow;
+    
+}
+/* make fish option tomator color */
+option[value=fish]{
+    color: tomato;
+}
+
+/*PSUEDO CLASS*/
+/* hover: changes element's appearance
+   in contact with mouse
+*/
+button:hover{
+    /* line 81 doesn't work cause
+       line 17 takes precendence
+    */
+    background-color: tomato;
+    color: white;
+}
+
+/* active: appearance changes when clicked*/
+/* Top-most button not working?*/
+button:active{
+    background-color: violet;
+    color: black;
+}
+
+/* checked: radio buttons that been selected */
+/* :nth-of-type(): establis pattern by given number */
+
+/*Psudeo Element  */
+h2::first-letter{
+    color: blueviolet;
+}
+
+h2::first-line{
+    color: crimson;
+}
+
+/*CASCADE: the order of styles' implementation*/
+/* Specificity: INLINE-STYLES > ID > CLASS > ELEMENT */
+/*
+    line 17 modifies id, 
+    thus more specific than elements below,
+    thus has precedence
+*/
+#submission{/*line 17*/
+    background-color: yellowgreen;
+}
+/* line 81 */
+button:hover{
+    /* line 81 doesn't work cause
+       line 17 takes precendence
+    */
+    background-color: tomato;
+    color: white;
+}
+/* line 119 doesn't work*/
+button :hover{
+    color: olivedrab;
+    font-size: 10px;
+}
+
+/* ORDER: #id element.class*/

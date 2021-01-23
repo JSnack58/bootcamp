@@ -1,0 +1,48 @@
+/* used FancyButtonCodeAlong.css as template */
+/* use in FancyButtonCodeAlong.html*/
+
+body{
+    /* background-color: rgb(0, 12, 24); */
+    /* background-image: url(https://images.unsplash.com/photo-1503891617560-5b8c2e28cbf6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fHNwbGFzaCUyMGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center; */
+    /*short-hand version of code above */
+    /*REMEMBER: BACKGROUND ONLY NOT BACKGROUND-IMAGE;  */
+    background: center/40% no-repeat url("https://images.unsplash.com/photo-1503891617560-5b8c2e28cbf6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fHNwbGFzaCUyMGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    background: none;
+    border: salmon;
+    color: salmon;
+
+    border-style: solid;
+    border-width: 2px;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px; */
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all .25s;
+    
+}
+
+button:hover{
+    border-color:yellow;
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em yellow;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+    
+}
+
+button:active{
+    background-color: yellow;
+    color: black;
+}
+
+

@@ -1,0 +1,27 @@
+div{
+    /* width: 500px; */
+    /* height: 300px; */
+    background-color: royalblue;
+}
+
+#one{
+    /* width: 500px; */
+    /* height: 300px; */
+    background-color: rgba(65, 105, 225, .5);/*make the color fade*/
+    position: static;
+    top: 100px;/*Doesn't work because position is static*/
+}
+
+#two{
+    /* width: 500px; */
+    /* height: 300px; */
+    opacity: .5;/*makes the whole element fade*/
+    position: relative;
+    top: 0px;/*Moves relative to element's previous position*/
+}
+
+#three{
+    /* position: absolute;Moves relative to ancestor(this case the body) */
+    position:fixed;/*position relative to intial containing black*/
+    top:50px;
+}

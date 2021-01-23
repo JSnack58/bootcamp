@@ -1,0 +1,49 @@
+ /*  */
+body{
+    margin: 0;
+}
+ div{
+    /*Change text-box's size */
+   width: 500px;
+   
+   
+}
+#one{
+    padding-left: 50px;/*indext the text*/
+    background-color: palevioletred;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    margin-left: 10px;
+    display: inline-block;/*Inline-block allows borders, margin-width, margin-height*/
+}
+#two{
+    background-color: palegoldenrod ;
+    border-width: 3px;
+    border-color:chartreuse;
+    border-style: dotted;
+    margin-left: 20px;
+    display:   inline-block;
+}
+#three{
+    background-color: paleturquoise;
+    border-width: 3px;
+    border-color: cadetblue;
+    border-style: dashed;
+    margin-left: 30px;
+}
+
+button{
+    
+    background-color: royalblue;
+    padding: 10px;/*can increase size of button without expanding text*/
+    
+}
+
+/* CSS units 
+    pertcentage: multiple the elements size by the given percentage
+    EM: makes size the product of element's parent's size by the given number
+        will stack
+        list with children will gradually grow
+    REM: same as but product of give number by root element
+*/
