@@ -1,0 +1,83 @@
+h1{
+    text-align: center;
+}
+
+/* #container{ */
+    /* background-color: #003049; */
+    /* width: 90%; */
+    /* height: 500px; */
+    /* margin: 0 auto; */
+    /* border: 5px solid #003049; */
+    /* display:flex; */
+    /* For column wrapping */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /*justify-content: flex-start;/*aligns content to left of page*/
+    /* flex-wrap: wrap-reverse; */
+/* } */
+
+/*flex,wraping 
+
+#container div{
+    width: 200px;
+    height: 200px; 
+    
+    width: 600px;
+    height: 200px;
+    text-align: center;
+} */
+
+#container{
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;/*aligns content to left of page*/
+    /* align-items: center; */
+    align-items: flex-start;
+    /* align-content: center; */
+    flex-wrap: wrap;
+
+
+}
+/* Align items */
+#container div{
+     width:200px;
+     height:200px;
+     /* max-width: 300px; */
+     text-align: center;
+     flex-basis: 600px;/*The default dimsion of the element*/
+     /* flex-grow: 1;How much element will grow with enough space*/ 
+
+
+}
+/*FLEX:   
+   1 value- flex: 'flex-basis width&height'
+   2 values- flex: flex-grow flex-basis
+   3 values- flex: flex-grow flex-shrink flex-basis 
+*/
+/*FLEX 
+div:nth-of-type(1){
+
+    align-self:flex-start;
+    flex-grow: 1;
+
+}
+div:nth-of-type(2){
+    align-self:flex-start;
+    flex-grow: 3;
+
+} */
+
+/* div:nth-of-type(1){
+    align-self:flex-start;
+}
+div:nth-of-type(2){
+    align-self:center;
+}
+div:nth-of-type(3){
+    align-self:flex-end;
+} */

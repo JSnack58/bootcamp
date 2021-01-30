@@ -1,0 +1,12 @@
+/* used in table.html */
+/* @media (min-width: 600px) and (max-width: 800px){
+    h1{
+        color: purple;
+    }
+} */
+/* Act like an if-statment with window's properities as conditionals*/
+@media (min-width: 600px) and (max-width: 800px){
+    h1{
+        color: purple;
+    }
+}
